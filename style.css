@@ -1,0 +1,177 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #352F44;
+    color: #FAF0E6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header>h1 {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#add-button {
+    margin-bottom: 40px;
+    font-size: 25px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #5C5470;
+    color: #FAF0E6;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.67);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.67);
+}
+
+#books-list {
+    width: 90%;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px 20px;
+    table-layout: fixed;
+    font-size: 18px;
+}
+
+td {
+    word-wrap: break-word;
+}
+
+th {
+    text-align: left;
+    font-weight: bold;
+}
+
+tbody tr {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+
+dialog {
+    padding: 30px;
+    width: 250px;
+    border: 1px solid #352F44;
+    border-radius: 10px;
+    background-color: #FAF0E6;
+    color: #352F44;
+}
+
+.dialog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-header>div {
+    font-size: 18px;
+}
+
+#close-button {
+    border: none;
+    background: none;
+    color: #352F44;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-label,
+legend {
+    font-size: 12px;
+}
+
+.div-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+legend {
+    margin-bottom: 5px;
+}
+
+.div-status-choices {
+    display: flex;
+}
+
+.div-radio-choice {
+    flex-grow: 1;
+}
+
+#btn-submit {
+    align-self: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #5C5470;
+    color: #FAF0E6;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.67);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.67);
+}
+
+.td-title {
+    font-weight: bold;
+}
+
+#col-status, #col-remove {
+    width: 10%;
+}
+
+#col-status, #col-remove, .td-status, .td-remove {
+    text-align: center;
+}
+
+.btn-remove {
+    background-color: #A0153E;
+    color: #FAF0E6;
+}
+
+.btn-status,
+.btn-remove {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    width: 90px;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.67);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.67);
+}
+
+.btn-unread {
+    background-color: darkgray;
+    color: #352F44;
+}
+
+.btn-finished {
+    background-color: rgba(23, 237, 52, 0.89);
+    color: #352F44;
+}

@@ -5,12 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
+    <div class="container">
+        <div id="header">
+            <h1>My Library</h1>
+        </div>
+        <button id="add-button">+ add a book</button>
+        <dialog id="form-dialog">
+            <div class="dialog-container">
+                <div class="dialog-header">
+                    <div>Book Details</div>
+                    <button id="close-button">✕</button>
+                </div>
+                <form>
+                    <div class="div-field">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" name="title" id="title-field" placeholder="Title" required>
+                    </div>
+                    <div class="div-field">
+                        <label for="author" class="form-label">Author</label>
+                        <input type="text" name="author" id="author-field" placeholder="Author" required>
+                    </div>
+                    <div class="div-field">
+                        <label for="pages" class="form-label">Pages</label>
+                        <input type="number" name="pages" id="pages-field" min="1" placeholder="Pages" required
+                            value="100">
+                    </div>
+                    <fieldset>
+                        <legend>Status:</legend>
+                        <div class="div-status-choices">
+                            <div class="div-radio-choice">
+                                <input type="radio" name="status" id="status-choice-1" value="unread" checked>
+                                <label for="status-choice-1">Unread</label>
+                            </div>
+                            <div class="div-radio-choice">
+                                <input type="radio" name="status" id="status-choice-2" value="finished">
+                                <label for="status-choice-2">Finished</label>
+                            </div>
+                        </div>
+                    </fieldset>
 
+                    <input type="submit" value="Submit" id="btn-submit">
+                </form>
+            </div>
+        </dialog>
+        <div id="books-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="col-title">Title</th>
+                        <th id="col-author">Author</th>
+                        <th id="col-pages">Pages</th>
+                        <th id="col-status">Status</th>
+                        <th id="col-remove">Remove</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
